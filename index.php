@@ -1,8 +1,7 @@
 <?php
-    $settings = json_decode(file_get_contents("settings.json"));
-
     function getWebsocketURL()
     {
+        $settings = json_decode(file_get_contents("settings.json"));
         return 'wss://' . $settings->domain . ':' . $settings->port;
     }
 ?>
