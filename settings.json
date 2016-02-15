@@ -1,0 +1,7 @@
+{
+	"domain": "www.wagnerpatriota.com",
+	"port": 8776,
+	"username": "wagnerpatriota",
+	"certificate": "/etc/ssl/certs/wagnerpatriota.com.crt",
+	"privateKey": "/etc/ssl/private/wagnerpatriota.com.pem"
+}
