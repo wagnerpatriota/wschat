@@ -20,11 +20,11 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-	  "type": "welcome",
-	  "user": {
-		  "id": 3,
-		  "name": "User 3"
-	  }
+    "type": "welcome",
+    "user": {
+      "id": 3,
+      "name": "User 3"
+    }
   }
   ```
 
@@ -32,7 +32,7 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-      "type": "list_rooms"
+    "type": "list_rooms"
   }
   ```
 
@@ -40,29 +40,29 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "list_rooms",
-  	"rooms": {
-  		"1": {
-  			"id": 1,
-  			"title": "Room 1",
-  			"users": {
-  				"2": {
-  					"id": 2,
-  					"name": "Some user"
-  				}
-  			}
-  		},
-  		"2": {
-  			"id": 2,
-  			"title": "Room 2",
-  			"users": {}
-  		},
-  		"3": {
-  			"id": 3,
-  			"title": "Room 3",
-  			"users": {}
-  		}
-  	}
+    "type": "list_rooms",
+    "rooms": {
+      "1": {
+        "id": 1,
+        "title": "Room 1",
+        "users": {
+          "2": {
+            "id": 2,
+            "name": "Some user"
+          }
+        }
+      },
+      "2": {
+        "id": 2,
+        "title": "Room 2",
+        "users": {}
+      },
+      "3": {
+        "id": 3,
+        "title": "Room 3",
+        "users": {}
+      }
+    }
   }
   ```
 
@@ -70,8 +70,8 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "enter_room",
-  	"roomId": "1"
+    "type": "enter_room",
+    "roomId": "1"
   }
   ```
 
@@ -79,11 +79,11 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "enter_room",
-  	"user": {
-  		"id": 5,
-  		"name": "User 5"
-  	}
+    "type": "enter_room",
+    "user": {
+      "id": 5,
+      "name": "User 5"
+    }
   }
   ```
 
@@ -91,8 +91,8 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "text",
-  	"text": "some message"
+    "type": "text",
+    "text": "some message"
   }
   ```
 
@@ -100,20 +100,20 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "text",
-  	"text": "some message",
-  	"from": {
-  		"id": 4,
-  		"name": "User 4"
-  	}
+    "type": "text",
+    "text": "some message",
+    "from": {
+      "id": 4,
+      "name": "User 4"
+    }
   }
   ```
 - **gif**: The CLIENT sends a gif message to the chat, identified by a gifId.
 
   ```json
   {
-  	"type": "gif",
-  	"gifId": 3
+    "type": "gif",
+    "gifId": 3
   }
   ```
 
@@ -121,12 +121,12 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "gif",
-  	"gifId": 3,
-  	"from": {
-  		"id": 4,
-  		"name": "User 4"
-  	}
+    "type": "gif",
+    "gifId": 3,
+    "from": {
+      "id": 4,
+      "name": "User 4"
+    }
   }
   ```
 
@@ -134,7 +134,7 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "leave_room"
+    "type": "leave_room"
   }
   ```
 
@@ -142,11 +142,11 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "leave_room",
-  	"user": {
-  		"id": 2,
-  		"name": "User 2"
-  	}
+    "type": "leave_room",
+    "user": {
+      "id": 2,
+      "name": "User 2"
+    }
   }
   ```
 
@@ -154,8 +154,8 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "create_room",
-  	"title": "some new room"
+    "type": "create_room",
+    "title": "some new room"
   }
   ```
 
@@ -164,8 +164,8 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 - **change_name**: The CLIENT can change his/her name.
   ```json
   {
-  	"type": "change_name",
-  	"name": "my new name"
+    "type": "change_name",
+    "name": "my new name"
   }
   ```
 
@@ -173,8 +173,8 @@ The chat protocol works with JSON messages. Sample data will be used to explain 
 
   ```json
   {
-  	"type": "change_name",
-  	"oldName": "My old name",
-  	"newName": "My new name"
+    "type": "change_name",
+    "oldName": "My old name",
+    "newName": "My new name"
   }
   ```
